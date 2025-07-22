@@ -1,0 +1,478 @@
+/* Calypso Coucou Beach - Digital Menu Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #2c5aa0 0%, #1e3c72 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/Paillotte Pieds dans l\'Eau.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/* Fallback gradient if image doesn't load */
+.header-bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #2c5aa0 100%);
+    z-index: -1;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="70" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="80" r="2.5" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.tagline {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.location {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Styles */
+.nav-tabs {
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nav-tab {
+    flex: 1;
+    min-width: 120px;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6c757d;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-tab.active {
+    color: #2c5aa0;
+    border-bottom-color: #2c5aa0;
+    background: white;
+}
+
+.nav-tab:hover {
+    background: #e9ecef;
+}
+
+/* Content Styles */
+.content {
+    padding: 1rem;
+}
+
+.menu-section {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.menu-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #2c5aa0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.menu-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #6c757d;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item-content {
+    flex: 1;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c5aa0;
+    flex: 1;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-left: 1rem;
+}
+
+.item-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.special-item {
+    border-left-color: #f39c12;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+}
+
+.special-badge {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 1.5rem;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #3498db;
+}
+
+.contact-info {
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #2980b9;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+}
+
+.gallery-section .menu-item {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-title {
+    font-size: 1.5rem;
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #6c757d;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Beverage Images - Corrigées */
+.menu-item-image.mint-tea {
+    background-image: url('pictures/Thé Menthe.jpeg');
+}
+.menu-item-image.turkish-coffee {
+    background-image: url('pictures/Café Turc.jpg');
+}
+.menu-item-image.orange-juice {
+    background-image: url('pictures/Jus de Fraise.jpeg');
+}
+.menu-item-image.soft-drinks {
+    background-image: url('pictures/Sodas.webp');
+}
+.menu-item-image.mineral-water {
+    background-image: url('pictures/Express • Cappuccino • Café Crème • Américain.jpg');
+}
+.menu-item-image.lemonade {
+    background-image: url('pictures/Citronnade Maison.webp');
+}
+.menu-item-image.mojito {
+    background-image: url('pictures/Mojito.webp');
+}
+
+/* Seafood Images - Noms descriptifs exacts */
+.menu-item-image.sea-bream {
+    background-image: url('pictures/Tagliatelle Fruits de Mer.jpg');
+}
+.menu-item-image.calamari {
+    background-image: url('pictures/Mixte Fruits de Mer Grillé.jpg');
+}
+.menu-item-image.prawns {
+    background-image: url('pictures/Ojja Fruits de Mer.jpeg');
+}
+.menu-item-image.fish-chips {
+    background-image: url('pictures/Sauté à l\'Ail.jpeg');
+}
+.menu-item-image.seafood-platter {
+    background-image: url('pictures/Spaghetti Fruits de Mer.jpg');
+}
+
+/* Shisha Images - Nom descriptif exact */
+.menu-item-image.double-apple,
+.menu-item-image.mint-shisha,
+.menu-item-image.grape-shisha,
+.menu-item-image.watermelon-shisha,
+.menu-item-image.special-mix {
+    background-image: url('pictures/Chicha.jpeg');
+}
+
+/* Snack Images - Noms descriptifs exacts */
+.menu-item-image.brik {
+    background-image: url('pictures/Menu Poisson Frais.jpeg');
+}
+.menu-item-image.olives {
+    background-image: url('pictures/Menu Escalope Croustillante.jpeg');
+}
+.menu-item-image.hummus-pita {
+    background-image: url('pictures/Gaufre Chocolat Fruits Secs.jpeg');
+}
+.menu-item-image.french-fries {
+    background-image: url('pictures/chips ddady\'s.jpeg');
+}
+.menu-item-image.cheese-platter {
+    background-image: url('pictures/Gaufre Chocolat.jpg');
+}
+
+/* Additional specific images for menu items */
+.menu-item-image.cabane-sable {
+    background-image: url('pictures/Cabane sur Sable.jpg');
+}
+.menu-item-image.paillotte-vue {
+    background-image: url('pictures/Paillotte Pieds dans l\'Eau.jpg');
+}
+.menu-item-image.balade-mer {
+    background-image: url('pictures/Balade sur Mer.png');
+}
+.menu-item-image.escalope-menu {
+    background-image: url('pictures/Menu Escalope Croustillante.jpeg');
+}
+.menu-item-image.menu-poisson {
+    background-image: url('pictures/Menu Poisson Frais.jpeg');
+}
+.menu-item-image.the-amandes {
+    background-image: url('pictures/Thé Amande.jpg');
+}
+.menu-item-image.the-pignon {
+    background-image: url('pictures/Thé Pignon.jpeg');
+}
+.menu-item-image.gaufre-fruits-secs {
+    background-image: url('pictures/Gaufre Chocolat Fruits Secs.jpeg');
+}
+
+/* Responsive Design */
+@media (max-width: 320px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-tab {
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item-image {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 1rem;
+    }
+
+    .item-header {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .item-price {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

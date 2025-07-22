@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calypso Coucou Beach - Menu Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-bg-image"></div>
+            <h1 class="logo">🏖️ Calypso Coucou Beach</h1>
+            <p class="tagline">Authentic Tunisian Beach Experience</p>
+            <p class="location">📍 Ghar el Melah, Bizerte</p>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" onclick="showSection('packages')">🏖️ Nos Forfaits</button>
+            <button class="nav-tab" onclick="showSection('restaurant')">🍽️ Restaurant</button>
+            <button class="nav-tab" onclick="showSection('cafe')">☕ Café & Bar</button>
+            <button class="nav-tab" onclick="showSection('detente')">💨 Détente</button>
+        </nav>
+
+        <!-- Content Sections -->
+        <main class="content">
+            <!-- Packages Section -->
+            <section id="packages" class="menu-section active">
+                <h2 class="section-title">🏖️ Découvrez Calypso Coucou Beach</h2>
+
+
+
+                <div style="background: linear-gradient(135deg, #e8f4fd 0%, #ffffff 100%); padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0; text-align: center; border: 2px solid #2c5aa0;">
+                    <h3 style="color: #2c5aa0; margin-bottom: 1rem; font-size: 1.3rem;">🌊 Expérience Complète Pieds dans l'Eau</h3>
+                    <p style="color: #6c757d; font-size: 1rem; line-height: 1.6;">
+                        Profitez d'une journée inoubliable dans notre paradis tunisien avec vue panoramique sur la mer,
+                        cuisine authentique et services premium inclus.
+                    </p>
+                </div>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image paillotte-vue"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">PREMIUM</div>
+                        <div class="item-header">
+                            <span class="item-name">Paillotte Pieds dans l'Eau</span>
+                            <span class="item-price">80 DT</span>
+                        </div>
+                        <p class="item-description">L'expérience ultime : directement sur la plage avec vue mer panoramique</p>
+                    </div>
+                </div>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image cabane-sable"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">CONFORT</div>
+                        <div class="item-header">
+                            <span class="item-name">Cabane sur Sable</span>
+                            <span class="item-price">70 DT</span>
+                        </div>
+                        <p class="item-description">Ambiance cosy sur le sable fin, parfait pour les familles</p>
+                    </div>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #28a745;">
+                    <h4 style="color: #28a745; margin-bottom: 0.5rem;">✅ Tout Inclus dans Votre Forfait</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; color: #6c757d; font-size: 0.9rem;">
+                        <div>• Transport bateau A/R</div>
+                        <div>• Déjeuner complet</div>
+                        <div>• Parking sécurisé</div>
+                        <div>• Accès piscine</div>
+                        <div>• Eau & fruits de saison</div>
+                        <div>• Douche & vestiaires</div>
+                    </div>
+                </div>
+
+                <h3 style="color: #2c5aa0; margin: 1.5rem 0 1rem 0; font-size: 1.2rem;">🍽️ Votre Déjeuner (au choix)</h3>
+
+                <div class="menu-item">
+                    <div class="menu-item-image menu-poisson"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Menu Poisson Frais</span>
+                            <span class="item-price">Inclus</span>
+                        </div>
+                        <p class="item-description">Dorade + Crevettes + Salades + Frites + Pâtes sauce rouge</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image escalope-menu"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Menu Escalope Croustillante</span>
+                            <span class="item-price">Inclus</span>
+                        </div>
+                        <p class="item-description">Escalope pannée + Crevettes + Salades + Frites + Pâtes sauce rouge</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Restaurant Section -->
+            <section id="restaurant" class="menu-section">
+                <h2 class="section-title">🍽️ Restaurant - Spécialités Maison</h2>
+
+                <div style="background: #fff8e1; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #f39c12;">
+                    <p style="color: #6c757d; font-size: 0.9rem; margin: 0; text-align: center;">
+                        <strong>Nos spécialités fruits de mer</strong> - Fraîcheur garantie, préparées selon les traditions tunisiennes
+                    </p>
+                </div>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image seafood-platter"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">SIGNATURE</div>
+                        <div class="item-header">
+                            <span class="item-name">Spaghetti Fruits de Mer</span>
+                            <span class="item-price">50 DT</span>
+                        </div>
+                        <p class="item-description">Sauce rouge maison, fruits de mer frais du jour</p>
+                    </div>
+                </div>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image sea-bream"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">SIGNATURE</div>
+                        <div class="item-header">
+                            <span class="item-name">Tagliatelle Fruits de Mer</span>
+                            <span class="item-price">50 DT</span>
+                        </div>
+                        <p class="item-description">Sauce blanche crémeuse, sélection de fruits de mer</p>
+                    </div>
+                </div>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image calamari"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">GRILLÉ</div>
+                        <div class="item-header">
+                            <span class="item-name">Mixte Fruits de Mer Grillé</span>
+                            <span class="item-price">80 DT</span>
+                        </div>
+                        <p class="item-description">Calmar + Crevettes grillés au feu de bois</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image prawns"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Ojja Fruits de Mer</span>
+                            <span class="item-price">50 DT</span>
+                        </div>
+                        <p class="item-description">Spécialité tunisienne traditionnelle aux fruits de mer</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image fish-chips"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Sauté à l'Ail</span>
+                            <span class="item-price">70 DT</span>
+                        </div>
+                        <p class="item-description">Fruits de mer sautés à l'ail et oignon</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cafe Section -->
+            <section id="cafe" class="menu-section">
+                <h2 class="section-title">☕ Café & Bar - Saveurs Authentiques</h2>
+                
+                <h3 style="color: #2c5aa0; margin: 1rem 0; font-size: 1.1rem;">🍃 Thés Traditionnels</h3>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image mint-tea"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">TRADITIONNEL</div>
+                        <div class="item-header">
+                            <span class="item-name">Thé Menthe</span>
+                            <span class="item-price">5 DT</span>
+                        </div>
+                        <p class="item-description">Le classique tunisien, menthe fraîche</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image the-amandes"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Thé Amande</span>
+                            <span class="item-price">8 DT</span>
+                        </div>
+                        <p class="item-description">Thé aux amandes sec</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image the-pignon"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Thé Pignon</span>
+                            <span class="item-price">10 DT</span>
+                        </div>
+                        <p class="item-description">Aux pignons de pin, saveur unique</p>
+                    </div>
+                </div>
+
+                <h3 style="color: #2c5aa0; margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">☕ Cafés</h3>
+
+                <div class="menu-item">
+                    <div class="menu-item-image turkish-coffee"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Café Turc</span>
+                            <span class="item-price">5 DT</span>
+                        </div>
+                        <p class="item-description">Traditionnel, fort et parfumé</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image mineral-water"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Express • Cappuccino • Café Crème • Américain</span>
+                            <span class="item-price">5 DT</span>
+                        </div>
+                        <p class="item-description">Café grain, préparation italienne</p>
+                    </div>
+                </div>
+
+                <h3 style="color: #2c5aa0; margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">🍹 Bar & Rafraîchissements</h3>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image mojito"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">COCKTAIL</div>
+                        <div class="item-header">
+                            <span class="item-name">Mojito</span>
+                            <span class="item-price">10 DT</span>
+                        </div>
+                        <p class="item-description">Red • Blue • Basilic • Classique</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image lemonade"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Citronnade Maison</span>
+                            <span class="item-price">8 DT</span>
+                        </div>
+                        <p class="item-description">Fraîche et naturelle</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image orange-juice"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Jus de Fraise</span>
+                            <span class="item-price">10 DT</span>
+                        </div>
+                        <p class="item-description">100% naturel</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image soft-drinks"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Sodas</span>
+                            <span class="item-price">5 DT</span>
+                        </div>
+                        <p class="item-description">Coca, Fanta, Sprite... bien frais</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detente Section -->
+            <section id="detente" class="menu-section">
+                <h2 class="section-title">� Espace Détente & Gourmandises</h2>
+
+                <div style="background: #f3e5f5; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #9c27b0;">
+                    <p style="color: #6c757d; font-size: 0.9rem; margin: 0; text-align: center;">
+                        <strong>Prolongez votre plaisir</strong> - Chicha premium et petites gourmandises pour parfaire votre détente
+                    </p>
+                </div>
+
+                <h3 style="color: #2c5aa0; margin: 1rem 0; font-size: 1.1rem;">💨 Chicha Premium</h3>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image double-apple"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">PREMIUM</div>
+                        <div class="item-header">
+                            <span class="item-name">Chicha</span>
+                            <span class="item-price">25 DT</span>
+                        </div>
+                        <p class="item-description">Love • Menthe • Raisin • Shikh Money • Pomme • Et plus...</p>
+                    </div>
+                </div>
+
+                <h3 style="color: #2c5aa0; margin: 1.5rem 0 1rem 0; font-size: 1.1rem;">🍯 Petites Gourmandises</h3>
+
+                <div class="menu-item special-item">
+                    <div class="menu-item-image french-fries"></div>
+                    <div class="menu-item-content">
+                        <div class="special-badge">7 SAVEURS</div>
+                        <div class="item-header">
+                            <span class="item-name">Chips Daddy's Premium</span>
+                            <span class="item-price">10 DT</span>
+                        </div>
+                        <p class="item-description">
+                            <strong>Choisissez votre saveur :</strong><br>
+                            🍓 Framboise & Poivre • 🍄 Truffe Parmesan • 🌿 Romarin<br>
+                            🧀 Cheddar Oignon • 🧄 Ail/Persil • 🌶️ Paprika • 🧂 Sel de Mer
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image cheese-platter"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Gaufre Chocolat</span>
+                            <span class="item-price">10 DT</span>
+                        </div>
+                        <p class="item-description">Chaude et croustillante</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-image gaufre-fruits-secs"></div>
+                    <div class="menu-item-content">
+                        <div class="item-header">
+                            <span class="item-name">Gaufre Chocolat Fruits Secs</span>
+                            <span class="item-price">15 DT</span>
+                        </div>
+                        <p class="item-description">Avec amandes et noix</p>
+                    </div>
+                </div>
+
+                <div style="background: #e8f5e8; padding: 1rem; border-radius: 8px; margin-top: 1.5rem; border-left: 4px solid #4caf50;">
+                    <h4 style="color: #4caf50; margin-bottom: 0.5rem;">💡 Bon à Savoir</h4>
+                    <p style="color: #6c757d; font-size: 0.9rem; margin: 0;">
+                        Ces extras ne sont pas inclus dans vos forfaits plage.<br>
+                        Parfaits pour prolonger votre moment de détente au bord de l'eau.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2 class="gallery-title">📸 Expérience Calypso Coucou Beach</h2>
+            <p style="color: #6c757d; margin-bottom: 1.5rem; text-align: center;">Découvrez notre cadre exceptionnel et nos expériences uniques</p>
+
+            <!-- Balade sur Mer - Experience -->
+            <div class="menu-item special-item" style="margin-bottom: 2rem; background: linear-gradient(135deg, #fff8e1 0%, #ffffff 100%); border: 2px solid #f39c12;">
+                <div class="menu-item-image balade-mer"></div>
+                <div class="menu-item-content">
+                    <div class="special-badge" style="background: #f39c12;">EXPÉRIENCE UNIQUE</div>
+                    <div class="item-header">
+                        <span class="item-name">🚤 Balade sur Mer</span>
+                        <span class="item-price">250 DT</span>
+                    </div>
+                    <p class="item-description">Découverte exclusive des côtes de Ghar el Melah avec guide expérimenté. Réservation obligatoire.</p>
+                </div>
+            </div>
+
+           
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-section">
+                <h3 class="footer-title">📞 Contact Information</h3>
+                <div class="contact-info">Phone: +216 96 86 51 51</div>
+                <div class="contact-info">📍 Ghar el Melah, Bizerte, Tunisia</div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">🕒 Horaires d'Ouverture</h3>
+                <div class="contact-info">Ouvert 7j/7 : 9h00 - 19h00</div>
+                <div class="contact-info">☎️ Réservations uniquement par téléphone</div>
+            </div>
+
+           
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #34495e; opacity: 0.7;">
+                <p>&copy; 2025 Calypso Coucou Beach. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
